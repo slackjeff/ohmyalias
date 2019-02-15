@@ -24,7 +24,6 @@
 #     * Now with alias removal support in (.bashrc)
 #----------------------------------------------------------------------------------|
 
-
 #--------VARS-------------->
 version="1.1"
 directory_bashrc="$HOME/.bashrc"
@@ -34,8 +33,6 @@ lang="" # reset var.
 red="\033[31;1m"
 end="\033[m"
 #-------------------------->
-
-
 
 #--------FUNCTIONS--------->
 br(){
@@ -49,14 +46,9 @@ cat << EOF >> "$directory_bashrc"
 #$Pequena_Descricao
 alias ${Nick}="$Comando"
 EOF
-
 }
 
-
-
-
 eng(){
-
 for ali in "Small_Description" "Nick" "Command"; do
     read -p "${ali[@]}: " ${ali[@]}
 done
@@ -66,7 +58,6 @@ cat << EOF >> "$directory_bashrc"
 #$Small_Description
 alias ${Nick}="$Command"
 EOF
-
 }
 
 ajuda_now(){
@@ -96,9 +87,7 @@ Comando: ls --color
 
 O arquivo é indexado no seu .bashrc, caso você não o tenha em seu HOME é criado
 automaticamente no inicio do programa.
-
 EOF
-
 }
 
 help_now(){
